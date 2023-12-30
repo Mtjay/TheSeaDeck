@@ -42,9 +42,9 @@ a, a:hover, a:focus, a:active {
 .hero-section-top{
     padding: 0;
     width: 100vw;
-    height: 75vh;
+    height: 85vh;
     
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ),  url('./assets/choosing-right-warehouse-facility-large.avif');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ),  url('./assets/yatch-bg.jpg');
     
     background-size: cover;
     background-repeat: no-repeat;
@@ -111,14 +111,17 @@ a, a:hover, a:focus, a:active {
     display: flex;
     flex-direction: row;
     position: fixed;
-    top: 15px;
-    left: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
     width: 100%;
-    transition: text-shadow 0.25s;
+    transition: box-shadow 0.25s;
 }
 
 .navigation-scrolled {
-    text-shadow: 1px 1px 0px  gray;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgba(67, 67, 67, 0.5);
+    color: var(--tertiary-color);
   }
 .title{
     text-transform: uppercase;
@@ -359,6 +362,7 @@ a, a:hover, a:focus, a:active {
 }
 .column-list-link{
     padding-bottom: 5px;
+    cursor: pointer;
 }
 .column-list-link:hover{
     opacity: 80%;
