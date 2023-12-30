@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <script>
+      window.addEventListener('scroll', function() {
+        var navbar = document.querySelector('.navigation');
+        var navbarHeight = navbar.offsetHeight;
+        var hero = document.querySelector('.hero-section-top')
+        var heroHeight = hero.offsetHeight;
+        
+        if (window.scrollY > heroHeight) {
+          navbar.classList.add('navigation-scrolled');
+        } else {
+          navbar.classList.remove('navigation-scrolled');
+        }
+      });
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles-->
+    <link rel="stylesheet" href="./styles.css"/>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="/src/assets/boat24x24.png"/>
+
+    <!-- Animate CSS CDN -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Sea Deck</title>
+  </head>
+  <body>
+    <nav>
+        <div class="navigation">
+          <div class="title">Sea Deck</div>
+          <div class="nav-links-container">
+            <a href="#shop" class="nav-link">Shop</a>
+            <a href="#brands" class="nav-link">Brands</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </div>
+          
+        </div>
+    </nav>
+    <section class="hero-section">
+      <div class="hero-section-top">
+        <div class="hero-text">
+          <div class="hero-title">
+          Unrivaled Elegance, Decked for Distinction
+          </div>
+          <div class="hero-subtitle">
+            Premium yatch decking mats
+          </div>
+          <a target="_blank" href="https://www.amazon.com/s?i=merchant-items&me=A1NHKF42N1GYTA&page=2&qid=1703883990&ref=sr_pg_1">
+            <button class="hero-button">
+            Browse products
+          </button>
+          </a>
+          
+        </div>
+      </div>
+    </section>
+    <div class="feature-section" id="shop">
+      <div class="section-header shop">
+        <div class="section-title">
+          Shop
+        </div>
+        <div class="shops-container">
+        
+          <div class="shop-card">
+            <img loading="lazy" class="shop-img amazon" src="./assets/Amazon_logo.svg.webp" alt="">
+          </div>
+          <div class="shop-card">
+            <img loading="lazy" class="shop-img ali-express" src="./assets/AliExpress-logo.png" alt="">
+          </div>
+          <div class="shop-card">
+            <img loading="lazy" class="shop-img etsy" src="./assets/Etsy-logo.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="feature-section brands" id="brands">
+      <div class="section-header brands-header">
+        <div class="section-title">
+          Brands
+        </div>
+        <div class="section-header-link">
+          Shop all brands &#8594;
+        </div>
+      </div>
+      <div class="brands-card-container">
+
+        <div class="brands-container-top">
+          <div class="brands-card">
+            <img class="brand-img" src="./assets/rayglass-logo.png" alt="">
+          </div>
+          <div class="brands-card">
+            <img class="brand-img" src="./assets/malibu-boats-logo.png" alt="">
+          </div>
+          <div class="brands-card">
+            <img class="brand-img" src="./assets/Regal_Logo.png" alt="">
+          </div>
+        </div>
+
+        <div class="brands-container-bottom">
+          <div class="brands-card">
+            <img class="brand-img" src="./assets/rinker.png" alt="">
+          </div>
+          <div class="brands-card">
+            <img class="brand-img" src="./assets/maxum-boats-logo.png" alt="">
+          </div>
+          <div class="brands-card">
+            <img class="brand-img" src="./assets/monterey-logo.png" alt="">
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    
+       <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </body>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-column">
+          <div class="column-title">
+              About
+          </div>
+          <div class="column-desc">
+            SeaDeck is committed to providing each customer with the highest standard of customer service.
+            We take pride in offering a curated selection of high-quality mats meticulously crafted to 
+            elevate your maritime experience. Our collection caters to a myriad of boat brands, 
+            spanning various years and models, ensuring a perfect fit for every vessel.
+          </div>
+        </div>
+        <div class="footer-column">
+          <div class="column-title">
+            Shops
+          </div>
+          <div class="column-list">
+            <a href="" class="column-list-link">
+              Amazon
+          </a>
+          <a href="" class="column-list-link">
+              AliExpress
+          </a>
+          <a href="" class="column-list-link">
+              Etsy
+          </a>
+          </div>
+          
+        </div>
+        <div class="footer-column">
+          <div class="column-title">
+            Quick Links
+          </div>
+          <div class="column-list">
+            <div class="column-list-link">
+              About Us
+            </div>
+            <div class="column-list-link">
+              Contact Us
+            </div>
+            <div class="column-list-link">
+              Privacy Policy
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <hr/>
+        <div class="column-desc">
+          Copyright &#169; 2023 All Rights Reserved by SeaDeck.
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  
+</html>
